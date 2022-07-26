@@ -1,9 +1,15 @@
+.header-background{
+    background-color: #f1bea8;
+}
 .banner-text-color1{
     color: #FA804C;
 }
 .banner-text-color2 {
     color: #363958;
 }
-header-bg-color{
+.header-bg-color{
     background-color: #FFF9F4;
+}
+.card-bg-color{
+    background-color: rgb(246, 238, 238);
 }
