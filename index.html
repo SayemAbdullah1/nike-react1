@@ -10,10 +10,10 @@
 </head>
 <body>
     <!------------------- Header section start ------------------------->
-    <header class="header-bg-color mb-5 pb-5">
+    <header class="header-bg-color mb-5 pb-5" id="home">
 
         <!--------------------- Nav section start ------------------------>
-        <nav class="navbar navbar-expand-lg ">
+        <nav class="navbar navbar-expand-lg " ">
             <div class="container fixed-top ">
             
                     <a class="navbar-brand" href="#">
@@ -91,7 +91,11 @@
             <div class="card border-0 col-12 col-md-6 col-lg-4" ">
                 <img src="images/Daco_1703273 1.png" class="card-img img-fluid card-bg-color rounder ps-5 pt-3 pb-4" alt="..." >
                 <div class="card-body">
-                    <h5 class="card-title display-7 fw-bold banner-text-color2">Sneakers Skate Shoe</h5>
+                    <div class="d-flex">
+                        <h5 class="card-title display-7 fw-bold banner-text-color2 pe-2">Sneakers Skate Shoe</h5>
+                        <h6><span class="badge bg-danger">New</span></h6>
+                    </div>
+                    
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
                         content.</p>
                         <div class="d-flex justify-content-between">
@@ -119,9 +123,46 @@
                 </div>
             </div>
         </div>
+        <!------------------------Modal alart show -------------------------->
+
+        <div>
+            <!-- Button trigger modal -->
+            <div class="d-flex justify-content-end">
+                <button type="button" class="btn btn-light btn btn-outline-secondary " data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop">
+                    See our products
+                </button>
+            </div>
+            
+            
+            <!-- Modal -->
+            <div class="modal fade " id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog ">
+                    <div class="modal-content ">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="staticBackdropLabel">Product store</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Sorry! stock out.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Understood</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        
+
     </section>
     <!------------------------- casual shoe end --------------------------->
-
+    
     <!------------------------- formal shoe start --------------------------->
     <section class="mb-5">
         <h2 class="fw-bold my-5 display-5">FORMAL SHOES</h2>
@@ -178,9 +219,9 @@
         </div>
     </section>
 
-
+<!-- ----------------------------------About us ------------------------------------->
     <section class="mb-5" id="about">
-        <div class="row">
+        <div class="row mb-5">
             <div class="flex-wrap col-12 col-lg-6 d-flex">
                 <div class="d-flex shadow-sm rounded my-2 p-3">
                     <div>
@@ -224,6 +265,100 @@
                 <img src="icons/XMLID 1.png" alt="" class="img-fluid">
             </div>
         </div>
+        
+        <!--------------------- alert message ----------------------------->
+        <div class="alert alert-primary d-flex align-items-center" role="alert">
+            <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-exclamation-triangle-fill flex-shrink-0 me-2"
+                viewBox="0 0 16 16" role="img" aria-label="Warning:" style="height: 30px;">
+                <path
+                    d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+            </svg>
+            <div>
+                An example alert with an icon
+            </div>
+        </div>
+        <!------------------- popovers -------------------------------->
+       
+
+        <!------------------------------- placeholder -------------------------->
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-12">
+                <div class="card" aria-hidden="true">
+                    <img src="" class="card-img-top bg-secondary" alt="..." style="height: 250px;">
+                    <div class="card-body">
+                        <h5 class="card-title placeholder-glow">
+                            <span class="placeholder col-6"></span>
+                        </h5>
+                        <p class="card-text placeholder-glow">
+                            <span class="placeholder col-7"></span>
+                            <span class="placeholder col-4"></span>
+                            <span class="placeholder col-4"></span>
+                            <span class="placeholder col-6"></span>
+                            <span class="placeholder col-8"></span>
+                        </p>
+                        <a href="#" tabindex="-1" class="btn btn-primary disabled placeholder col-6"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12">
+                <div class="card" aria-hidden="true">
+                    <img src="" class="card-img-top bg-secondary" alt="..." style="height: 250px;">
+                    <div class="card-body">
+                        <h5 class="card-title placeholder-glow">
+                            <span class="placeholder col-6"></span>
+                        </h5>
+                        <p class="card-text placeholder-glow">
+                            <span class="placeholder col-7"></span>
+                            <span class="placeholder col-4"></span>
+                            <span class="placeholder col-4"></span>
+                            <span class="placeholder col-6"></span>
+                            <span class="placeholder col-8"></span>
+                        </p>
+                        <a href="#" tabindex="-1" class="btn btn-primary disabled placeholder col-6"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12">
+                <div class="card" aria-hidden="true">
+                    <img src="" class="card-img-top bg-secondary" alt="..." style="height: 250px;">
+                    <div class="card-body">
+                        <h5 class="card-title placeholder-glow">
+                            <span class="placeholder col-6"></span>
+                        </h5>
+                        <p class="card-text placeholder-glow">
+                            <span class="placeholder col-7"></span>
+                            <span class="placeholder col-4"></span>
+                            <span class="placeholder col-4"></span>
+                            <span class="placeholder col-6"></span>
+                            <span class="placeholder col-8"></span>
+                        </p>
+                        <a href="#" tabindex="-1" class="btn btn-primary disabled placeholder col-6"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+
+
+
+
+
+
+
+        <!------------------- pagination button -------------------->
+        <nav aria-label="Page navigation example">
+            <ul class="pagination justify-content-end">
+                <li class="page-item disabled">
+                    <a class="page-link">Previous</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#home">1</a></li>
+                <li class="page-item"><a class="page-link" href="#product">2</a></li>
+                <li class="page-item"><a class="page-link" href="#about">3</a></li>
+                <li class="page-item">
+                    <a class="page-link" href="#">Next</a>
+                </li>
+            </ul>
+        </nav>
     </section>
 
 
